@@ -8,13 +8,13 @@ import './Ownable.sol';
  */
 contract Contactable is Ownable{
 
-    string public contactInfo;
+    string public contactInformation;
 
     /**
      * @dev Allows the owner to set a string with their contact information.
      * @param info The contact information to attach to the contract.
      */
     function setContactInformation(string info) onlyOwner{
-        contactInfo = info;
+         contactInformation = info;
      }
 }

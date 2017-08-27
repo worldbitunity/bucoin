@@ -1,12 +1,13 @@
 pragma solidity ^0.4.11;
 
 import "./ownership/Claimable.sol";
+import "./ownership/Contactable.sol";
 
 /**
  * @title BuCoin
  * @dev The BuCoin contract is Claimable, and provides ERC20 standard token.
  */
-contract BuCoin is Claimable {
+contract BuCoin is Claimable, Contactable {
 
     string public name;
     string public symbol;
