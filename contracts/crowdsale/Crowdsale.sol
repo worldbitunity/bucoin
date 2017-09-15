@@ -209,7 +209,6 @@ contract Crowdsale is Haltable {
     // TokenLock can be null, meaning no lock, after token released, can be transfer anywhere or anytime
     function setPricingStrategyAndTokenLock(PricingStrategy _pricingStrategy, TokenLock _tokenLock) onlyOwner {
         if (address(tokenLock) != 0x0) {
-            token.transfer(address(tokenLock), tokenLock.tokensAllocatedTotal());
             require(tokenLock.lock());
         }
 

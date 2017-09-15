@@ -49,6 +49,7 @@ contract BuCoinICO is Crowdsale {
         require(receiver != 0x0);
 
         if(address(tokenLock) != 0x0) {
+            token.transfer(address(tokenLock), tokenAmount);
             tokenLock.addInvestor(receiver, tokenAmount);
             return;
         }
