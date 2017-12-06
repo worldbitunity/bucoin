@@ -13,7 +13,7 @@ contract BuCoin is Claimable, Contactable, HasNoEther, FreezableToken {
     // @dev Constructor initial token info
     function BuCoin(){
         uint256 _decimals = 18;
-        uint256 _supply = 1000000000*(10**_decimals);
+        uint256 _supply = 210000000*(10**_decimals);
 
         _totalSupply = _supply;
         balances[msg.sender] = _supply;

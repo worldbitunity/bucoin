@@ -10,7 +10,7 @@ import "./crowdsale/PricingStrategy.sol";
  */
 contract BuPrivateRaiserPricingStrategy is PricingStrategy {
     // @dev token price, no matter wei to mini BUC, or ETH to BUC
-    uint256 public constant TOKEN_PRICE = 20000;
+    uint256 public constant TOKEN_PRICE = 9300;
 
     function BuPrivateRaiserPricingStrategy() {
         pricePerWei = TOKEN_PRICE;

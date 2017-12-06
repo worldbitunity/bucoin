@@ -4,8 +4,8 @@ import "./crowdsale/Crowdsale.sol";
 
 contract BuCoinICO is Crowdsale {
 
-    uint256 constant MAX_WEIs = 105000 * (10**18);
-    uint256 constant MAX_TOKENS = 610000000 * (10**18);
+    uint256 constant MAX_WEIs = 19180 * (10**18);
+    uint256 constant MAX_TOKENS = 178500000 * (10**18);
 
     function BuCoinICO(address _token, uint256 _end, uint256 _minimumFundingGoal) Crowdsale(_token, now, _end, _minimumFundingGoal){
     }
